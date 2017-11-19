@@ -63,7 +63,7 @@ func getImageDim(img image.Image) *imageDim {
 	}
 }
 
-// getRGBTuple, given a single pixel, retuns its RGB color
+// getRGBTuple, given a single pixel, returns its RGB color
 func getRGBTuple(pixel color.Color) rgbT {
 	red, green, blue, _ := pixel.RGBA()
 	rgbTuple := rgbT{int(red / 255), int(green / 255), int(blue / 255)}
