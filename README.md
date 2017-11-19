@@ -42,7 +42,7 @@ Usage of C:\Work\GoWorkspace\bin\palitra.exe:
 If you're ok with the default values, then you can simply pipe an image to palitra. Example:
 
 ```bash
-$ cat ./images/venice.jpg | palitra
+$ cat ./test_images/venice.jpg | palitra
 ```
 
 The result should look like the following:
@@ -57,7 +57,7 @@ Completed in 679.7955ms ✨
 If not, you can manually specify the parameters as you like:
 
 ```bash
-$ palitra -img ./images/venice.jpg -n 5 -r 50
+$ palitra -img ./test_images/venice.jpg -n 5 -r 50
 ```
 
 The result should look like the following:
