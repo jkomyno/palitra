@@ -20,7 +20,7 @@ func handleError(err error) {
 }
 
 func init() {
-	imageReader, err := os.Open("./images/venice.jpg")
+	imageReader, err := os.Open("./test_images/venice.jpg")
 	handleError(err)
 	defer imageReader.Close()
 
