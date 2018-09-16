@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/jkomyno/palitra.svg?branch=master)](https://travis-ci.org/jkomyno/palitra) [![GoDoc](https://godoc.org/github.com/jkomyno/palitra?status.svg)](https://godoc.org/github.com/jkomyno/palitra) [![Go Report Card](https://goreportcard.com/badge/github.com/jkomyno/palitra)](https://goreportcard.com/report/github.com/jkomyno/palitra)
 
+![Example image](./images/screenshot.jpg)
+
 # Description
 A fast utility to find the N most frequent colors in a picture, approximated to CSS3 color names.
 Palitra is available both as a plain library, and as a CLI tool (which also supports input from `stdin`, via pipe).
