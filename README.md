@@ -5,7 +5,8 @@
 ![Example image](./images/screenshot.jpg)
 
 # Description
-A fast utility to find the N most frequent colors in a picture, approximated to CSS3 color names.
+
+Utility that finds the N most frequent colors in a picture, approximated to CSS3 color names.
 Palitra is available both as a plain library, and as a CLI tool (which also supports input from `stdin`, via pipe).
 **It requires Go 1.8**.
 
