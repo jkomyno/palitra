@@ -1,0 +1,41 @@
+project_name: palitra
+before:
+   hooks:
+    #
+builds:
+  -
+    # Path to main package
+    main: ./cmd/palitra/palitra.go
+
+    # Name for the binary final name
+    binary: palitra
+    
+    # Custom environment variables to be set during the builds
+    env:
+      - CGO_ENABLED=0
+
+    # GOOS list to build for
+    goos:
+      - darwin
+      - windows
+      - linux
+    
+    # GOARCH to build for
+    goarch:
+      - amd64
+archive:
+  replacements:
+    darwin: Darwin
+    linux: Linux
+    windows: Windows
+    amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}-next"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+    - '^docs:'
+    - '^test:'
